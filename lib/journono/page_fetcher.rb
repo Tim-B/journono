@@ -16,13 +16,11 @@ module Journono
 
       rank = Highscore::Content.new text
       rank.configure do
-        set :multiplier, 2
-        set :upper_case, 3
-        set :long_words, 2
-        set :long_words_threshold, 15
-        set :vowels, 1 # => default: 0 = not considered
-        set :consonants, 5 # => default: 0 = not considered
-        set :ignore_case, true # => default: false
+        set :multiplier, 3
+        set :long_words, 5
+        set :long_words_threshold, 8
+        set :short_words_threshold, 3
+        set :ignore_case, true
         set :word_pattern, /[\w]+[^\s0-9]/ # => default: /\w+/
       end
 

@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'feedzirra'
 
-gem 'highscore'
+gem 'highscore',:git => 'git://github.com/Tim-B/highscore'
 
 gem 'travis'
 

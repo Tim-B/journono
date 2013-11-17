@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/Tim-B/highscore
+  revision: 59ab664ab61a5a670e6b184671d93800b862435a
+  specs:
+    highscore (1.1.0)
+      whatlanguage (>= 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,6 +57,8 @@ GEM
       debugger-ruby_core_source (~> 1.2.3)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
+    domain_name (0.5.15)
+      unf (>= 0.0.5, < 1.0.0)
     dynamoid (0.7.1)
       activemodel
       aws-sdk
@@ -80,6 +89,8 @@ GEM
       net-http-pipeline
     highline (1.6.20)
     hike (1.2.3)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     i18n (0.6.5)
     jbuilder (1.5.2)
       activesupport (>= 3.0.0)
@@ -95,15 +106,26 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mechanize (2.7.2)
+      domain_name (~> 0.5, >= 0.5.1)
+      http-cookie (~> 1.0.0)
+      mime-types (~> 1.17, >= 1.17.2)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (~> 2.5, >= 2.5.2)
+      nokogiri (~> 1.4)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (>= 0.0.9, < 0.2)
     method_source (0.8.2)
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
     multipart-post (1.2.0)
+    net-http-digest_auth (1.4)
     net-http-persistent (2.9)
     net-http-pipeline (1.0.1)
     netrc (0.7.7)
     nokogiri (1.5.10)
+    ntlm-http (0.1.1)
     polyglot (0.3.3)
     pry (0.9.12.3)
       coderay (~> 1.0)
@@ -178,8 +200,13 @@ GEM
     uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.3)
+      unf_ext
+    unf_ext (0.0.6)
     uuidtools (2.1.4)
+    webrobots (0.1.1)
     websocket (1.0.7)
+    whatlanguage (1.0.5)
 
 PLATFORMS
   ruby
@@ -190,8 +217,10 @@ DEPENDENCIES
   debugger
   dynamoid
   feedzirra
+  highscore!
   jbuilder (~> 1.2)
   jquery-rails
+  mechanize
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
   sdoc
