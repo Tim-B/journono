@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'feedzirra'
 
+gem 'google_custom_search_api'
+
 gem 'highscore',:git => 'git://github.com/Tim-B/highscore'
 
 gem 'travis'
